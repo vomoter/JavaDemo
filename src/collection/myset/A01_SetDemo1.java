@@ -21,9 +21,9 @@ public class A01_SetDemo1 {
         //3.打印集合(无序)
         //迭代器遍历
         System.out.println("迭代器遍历--------------");
-        Iterator<String> iter=s.iterator();
-        while (iter.hasNext()){
-            String str=iter.next();
+        Iterator<String> inter=s.iterator();
+        while (inter.hasNext()){
+            String str=inter.next();
             System.out.println(str);
         }
 
