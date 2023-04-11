@@ -2,7 +2,7 @@ package collection.myset;
 
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student>{
     private String name;
     private int age;
 
@@ -46,5 +46,13 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" + "name='" + name  + "', age=" + age + '}';
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        //指定排序的规则
+        //只看年龄，我想要按照年龄的升序进行排序
+        return this.getAge()-o.getAge();
+
     }
 }
