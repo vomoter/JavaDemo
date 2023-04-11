@@ -49,9 +49,19 @@ public class Student implements Comparable<Student>{
     }
 
     @Override
+    //this:表示当前要添加的元素
+    //o:表示已经在红黑树存在的元素
+
+    //返回值：
+    //负数：表示当前要添加的元素是小的，存左边
+    //正数:表示当前要添加的元素是大的，存右边
+    //0：表示当前要添加的元素已经存在，舍弃
     public int compareTo(Student o) {
         //指定排序的规则
         //只看年龄，我想要按照年龄的升序进行排序
+        System.out.println("------------");
+        System.out.println("this:"+this);
+        System.out.println("o:"+o);
         return this.getAge()-o.getAge();
 
     }
