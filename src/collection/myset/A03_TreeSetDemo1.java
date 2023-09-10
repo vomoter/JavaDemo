@@ -40,6 +40,7 @@ public class A03_TreeSetDemo1 {
         //Lambda表达式
         System.out.println("Lambda--------------------");
         ts.forEach( i -> System.out.println(i));
+
     }
 
 }
