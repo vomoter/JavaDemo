@@ -1,15 +1,15 @@
 package mythread.src.threadsafe03;
 
-import threadsafe01.MyThread;
+
 
 public class Test {
     public static void main(String[] args) {
         /*  一个电影院共有100张电影票，有三个窗口在售票，请实现这一功能*/
 
         //创建线程对象
-        threadsafe01.MyThread t1=new threadsafe01.MyThread();
-        threadsafe01.MyThread t2=new threadsafe01.MyThread();
-        threadsafe01.MyThread t3=new MyThread();
+        MyThread t1=new MyThread();
+        MyThread t2=new MyThread();
+        MyThread t3=new MyThread();
 
         //设置线程名字
         t1.setName("窗口1");
