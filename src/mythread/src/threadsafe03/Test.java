@@ -1,7 +1,5 @@
 package mythread.src.threadsafe03;
 
-
-
 public class Test {
     public static void main(String[] args) {
         /*  一个电影院共有100张电影票，有三个窗口在售票，请实现这一功能*/
